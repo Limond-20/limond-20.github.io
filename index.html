@@ -5,7 +5,70 @@
   <title>Mi página web</title>
 </head>
 <body>
-  <h1>¡Hola, soy David!</h1>
-  <p>Bienvenido a mi sitio web publicado con GitHub Pages 🚀</p>
+  <h1>¡Hola!</h1>
+  <h2>Bienvenido a mi página web. Aquí encontraras informacion acerca de mí y podras ver como va evolucionado mi manejo del lenguaje HTML, CSS y JavaScript</h2>
+  <p>Aquí una pequeña descripcion sobre mí: Actualmente tengo 20 años, vivo en la ciudad de Tehuantepec y estoy estudiando en la Univeridad del istmo, en la carrera de ingenieria computacional. Me gusta 
+  la <b>música rock</b>, <i>el arte</i>, <u>los videojuegos</u>, las peliculas y <mark>la tegnología</mark>. Espero pronto poder añadirmas cosas a la página.</p>
+  <h2>Artistas Favoritos</h2>
+  <ol>
+    <li>Enjambre</li>
+    <li>Zoé</li>
+    <li>Odisseo</li>
+    <li>The Strokes</li>
+  </ol>
+  <table>
+  <style>
+  table {
+    border-collapse: collapse;
+    width: 60%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+</style>
+  <caption>Tabla de opiniones sobre materias de este semestre</caption> <!-- Título de la tabla -->
+  <tr> <!-- Fila -->
+    <th>Materia</th> <!-- Encabezado de columna -->
+    <th>Opinión</th>
+  </tr>
+  <tr> <!-- Segunda fila -->
+    <td>Programación Web I</td> <!-- Celda de datos -->
+    <td>Se ve que vamos a aprender cosa útiles de verdad</td>
+  </tr>
+  <tr>
+    <td>AyO de comptadoras</td>
+    <td>Mucha informacion sobre procesadores. Vamos a ver mucha lógica</td>
+  </tr>
+    <tr>
+    <td>Métodos númericos</td>
+    <td>Matemáticas, muhcos ejercicios y muchos números</td>
+  </tr>
+    <tr>
+    <td>Ingenieria de Software</td>
+    <td>Vamos a tener una empresa. Ahora si voy a tener que concentrarme en la escuela</td>
+  </tr>
+    <tr>
+    <td>Compiladores</td>
+    <td>De esta materia no tengo esperanzas de aprender algo útil</td>
+  </tr>
+</table>
+  <h3>Deja tus comentarios aquí:</h3>
+  <form>
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+  <label for="phone">Número de teléfono:</label><br>
+  <input type="phone" id="phone" name="phone" required><br><br>
+  <label for="edad">Edad:</label><br>
+  <input type="number" id="edad" name="edad" min="1" max="120"><br><br>
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="Comentario" rows="4" cols="40" placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+  <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
